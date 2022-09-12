@@ -1,0 +1,65 @@
+@import "src/app/styles/variables";
+@import "src/app/styles/mixins";
+
+.card {
+  color: white;
+  width: 100%;
+  background-color: $darkBlue;
+  border-radius: 12px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+
+  &__img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+
+  &__banner {
+    padding: 10px 12px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &__line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__icon {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    img {
+      height: 20px;
+    }
+  }
+
+  &__price {
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__capacite {
+    width: 100%;
+  }
+
+}
+
+.like {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  @include like;
+}

@@ -1,0 +1,83 @@
+@import "src/app/styles/variables";
+
+.retour {
+  z-index: 100;
+  position: absolute;
+  left: 40px;
+}
+
+.parcours {
+  color: $darkBlue;
+
+  &__map {
+    z-index: 10;
+  }
+
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    z-index: 100;
+    position: absolute;
+    bottom: 10vh;
+    width: 80vw;
+    left: 10vw;
+    border-radius: .5rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: .6rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+    p {
+      padding-left: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    border-bottom: solid 1px $darkBlue;
+  }
+
+  &__time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+    border-right: 1px solid $darkBlue;
+    padding-left: .5rem;
+
+  }
+
+  &__distance {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+    padding-left: .5rem;
+  }
+
+  &__data {
+    display: flex;
+    padding-left: 1rem;
+    height: 7vh;
+
+    p {
+      padding-left: .4rem;
+    }
+  }
+}
+
+.arrow {
+  z-index: 100;
+  position: absolute;
+  background-color: white;
+  bottom: 30vh;
+  right: 10vw;
+  padding: .8rem;
+  border-radius: 50%;
+}

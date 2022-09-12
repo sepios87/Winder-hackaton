@@ -1,0 +1,18 @@
+<section class="itineraire">
+  <div class="parcours__map" style="height: 100vh"
+       leaflet
+       [leafletOptions]="options">
+  </div>
+  <section class="itineraire__description">
+    <div class="itineraire__nom">
+      <h1 class="itineraire__titre">{{ itineraire?.nom }}</h1>
+      <p class="itineraire__note"><img class="itineraire__icone" src="/assets/icons/liked.png" alt=""> 4/5</p>
+    </div>
+    <h2 class="itineraire__soustitre">Trajet proposé par <span class="itineraire__soustitre--gold">Jean Laurent</span></h2>
+    <a routerLink="/bateaux" class="itineraire__bouton">Choisir ce parcours</a>
+    <article>
+      <h2 class="itineraire__soustitre">Description</h2>
+      <p class="itineraire__texte">Ce parcours bordant la cote rochelaise, passant par l’ile d’oleron et proche du casino, offre une vue splendide sur les cotes et la faune locale</p>
+    </article>
+  </section>
+</section>

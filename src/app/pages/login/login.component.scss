@@ -1,0 +1,80 @@
+@import "src/app/styles/variables";
+
+.login {
+  height: 100vh;
+  background-color: white;
+
+  &__title {
+    font-size: 2rem;
+    color: $darkBlue;
+    padding-left: 3rem;
+    margin-bottom: 18vh;
+    padding-top: 8vh;
+  }
+
+  &__error{
+    color: red;
+    text-align: center;
+  }
+
+  &__item {
+    padding-left: 1.5rem;
+    border-radius: 10px;
+    background-color: $lightBlue;
+    height: 4vh;
+    color: $darkBlue;
+    border : 1px solid $lightBlue;
+  }
+
+  &__more {
+    color: $darkBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5vh;
+
+    a {
+      color: $brown;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  }
+
+  &__forgotten {
+    padding-bottom: 2.5vh;
+  }
+
+  &__not-account {
+    line-height: 1.3rem;
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+
+
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+
+  &__email {
+    margin-bottom: 1.5rem;
+  }
+
+  &__password {
+    margin-bottom: 1.5rem;
+  }
+
+  &__submit {
+    background-color: $darkBlue;
+    border: 1px solid $darkBlue;
+    border-radius: 10px;
+    color: white;
+    height: 5vh;
+    font-size: 1.2rem;
+  }
+}

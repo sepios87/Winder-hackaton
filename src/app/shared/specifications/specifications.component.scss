@@ -1,0 +1,39 @@
+@import "src/app/styles/variables";
+@import "src/app/styles/mixins";
+
+.specification {
+  background-color: $lightBlue;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  p {
+    color: $darkBlue;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+
+  @include layout;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: $darkBlue;
+    font-family: Gotham Bold, sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .icon {
+    margin: auto;
+  }
+}

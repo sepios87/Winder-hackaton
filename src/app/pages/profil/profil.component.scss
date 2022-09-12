@@ -1,0 +1,159 @@
+@import "src/app/styles/variables";
+@import "src/app/styles/mixins";
+
+
+.profil{
+  background-color: $lightBlue;
+  @include layout();
+
+  &__deconnexion {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    @include button();
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $darkBlue;
+    padding-top: 2rem;
+
+    span {
+      display: block;
+      font-weight: normal;
+    }
+  }
+
+  &__bloc{
+    margin :50px 0;
+  }
+}
+
+.section-profil__title {
+  font-weight: bold;
+  color: $darkBlue;
+  margin: 1.8rem 0;
+  font-size: 1.2rem;
+}
+
+.profil-infos {
+
+  &__datas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bloc {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__image{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 10px;
+    object-fit: contain;
+
+    &--white {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__identity {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 2rem;
+  }
+
+  &__name, &__surname {
+    width: 35vw;
+    padding: 1.1rem;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: .6rem;
+  }
+
+  &__email {
+    width: 70vw;
+    padding: 1.1rem;
+    border-radius: 10px;
+    background-color: white;
+    margin: .8rem 0;
+  }
+
+}
+
+.profil-buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+
+  a {
+    height: 5vh;
+    width: 50%;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__mdp {
+    background-color: $brown;
+  }
+
+  &__save {
+    background-color: $darkBlue;
+  }
+}
+
+.profil-bank {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: .9rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__title {
+    font-weight: bold;
+    color: $darkBlue;
+    margin: 1.8rem 0;
+    font-size: 1.2rem;
+  }
+
+  &__update{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+      padding-left: 1rem;
+    }
+  }
+
+  &__delete{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+      padding-left: 1rem;
+    }
+  }
+
+
+}

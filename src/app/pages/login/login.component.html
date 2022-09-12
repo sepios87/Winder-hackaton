@@ -1,0 +1,15 @@
+<section class="login">
+  <h1 class="login__title">Se connecter</h1>
+  <form class="loginForm" [formGroup]="form" (ngSubmit)="login()">
+    <input class="login__item loginForm__email" type="email" formControlName="email" placeholder="Email">
+    <p class="login__error" *ngIf="form.get('email')?.errors?.['email'] && isSendForm">Il faut un email valide</p>
+    <input class="login__item loginForm__password" type="password" formControlName="password" placeholder="Mot de passe">
+    <input class="loginForm__submit" type="submit" value="Se connecter">
+    <p class="login__error" *ngIf="isConnexionError">Email ou mot de passe invalide</p>
+  </form>
+  <section class="login__more">
+    <p class="login__forgotten">Mot de passe oublié ? <span class="login__click-here"><a href="">Cliquez ici</a></span></p>
+    <p class="login__not-account">Vous n'avez pas de compte ? <span class="login__log"><a routerLink="/inscription">S'inscrire</a></span></p>
+  </section>
+</section>
+

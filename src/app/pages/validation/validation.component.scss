@@ -1,0 +1,33 @@
+@import "src/app/styles/variables";
+@import "src/app/styles/mixins";
+
+.validation {
+  background-color: $lightBlue;
+  height: 100vh;
+  @include layout;
+  &__title {
+    font-size: 24px;
+    color: $darkBlue;
+    font-family: Gotham Bold, sans-serif;
+    margin-bottom: 2rem;
+    &--strong{
+      display: block;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    color: $darkBlue;
+    margin-bottom: 2rem;
+    font-family: Gotham Medium, sans-serif;
+  }
+  &__button {
+    margin: auto;
+    display: block;
+    width: fit-content;
+    background-color: $darkBlue;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 24px;
+    font-family: Gotham Medium, sans-serif;
+  }
+}

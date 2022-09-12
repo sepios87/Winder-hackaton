@@ -1,0 +1,31 @@
+@import "src/app/styles/variables";
+@import "src/app/styles/mixins";
+
+
+.profil-reservation {
+    &__bloc {
+      display: flex;
+      background-color: $darkBlue;
+      border-radius: .5rem;
+    }
+  
+    &__infos {
+      padding: .9rem;
+      color: white;
+    }
+  
+    &__subtitle {
+      font-weight: bold;
+    }
+  
+    &__date {
+      margin-top: 1rem;
+      margin-bottom: .4rem;
+    }
+
+    &__image{
+        width: 40vw;
+        object-fit: contain;
+        border-radius: 7px 0 0 7px;
+    }
+}

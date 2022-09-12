@@ -1,0 +1,9 @@
+<a *ngIf="bateau" [routerLink]="['/reservation', bateau.id]">
+  <figure class="bateau-vignette">
+    <img *ngIf="bateau.images" [src]="bateau.images[0].getUrl" [alt]="bateau.nom" class="bateau-vignette__image">
+    <figcaption class="bateau-vignette__description">
+      <h2 class="bateau-vignette__nom">{{ bateau.nom }}</h2>
+      <p class="bateau-vignette__price">{{ bateau.prix }}€/h</p>
+    </figcaption>
+  </figure>
+</a>

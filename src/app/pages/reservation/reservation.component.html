@@ -1,0 +1,42 @@
+<app-retour></app-retour>
+<div class="modal" (click)="toggleDisplayModal()" *ngIf="bateau && displayModal">
+    <app-specifications [bateau]="bateau"></app-specifications>
+</div>
+<section class="container" *ngIf="bateau">
+    <header class="reservation-header">
+        <owl-carousel-o [options]="optionsOwl" class="slider">
+            <ng-template *ngFor="let image of bateau.images" carouselSlide>
+                <img class="slider__img" height="200px" [src]="image.getUrl">
+            </ng-template>
+        </owl-carousel-o>
+        <img (click)="toggleLike()" *ngIf="bateau.images.length" class="like"
+            [src]="isLiked ? '/assets/icons/liked.png' : '/assets/icons/like.png'" />
+    </header>
+    <section class="section">
+        <div class="title-container">
+            <h1 class="title">Voilier</h1>
+            <div class="subtitle-container">
+                <h2 class="subtitle">{{bateau.nom}}</h2>
+                <p class="subtitle">à {{bateau.prix}}€/h</p>
+            </div>
+        </div>
+        <p>
+          Le voilier Odyssey sea propose un espace confortable pour des trajet moyen avec ses 2 chambres spacieuses. Parmis nos voilier les plus célèbres, l’Odyssey sea figure parmis les 50 voiliers les plus solliciter de France
+        </p>
+    </section>
+    <button (click)="toggleDisplayModal()" class="button">Voir les spécifications</button>
+    <div class="input-container">
+        <label class="input-container__label" for="dateDebut">
+            <input [ngModel]="dateDebut | date:'yyyy-MM-ddThh:mm'" (ngModelChange)="onChangeDateDebut($event)"
+                class="input" id="dateDebut" type="datetime-local" placeholder="date de début" />
+            Date de début
+        </label>
+        <label class="input-container__label" for="dateFin">
+            <input [ngModel]="dateFin | date:'yyyy-MM-ddThh:mm'" (ngModelChange)="onChangeDateFin($event)" class="input"
+                id="dateFin" type="datetime-local" placeholder="date de début" />
+            Date de fin
+        </label>
+    </div>
+    <p class="title title--total">Total à payer : <span>{{totalPrice}}€</span></p>
+    <button (click)="reserver()" class="button button--blue" [ngClass]="!(estConnecte) ? 'disabled' : ''">Réserver maintenant</button>
+</section>

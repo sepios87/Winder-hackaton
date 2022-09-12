@@ -1,0 +1,33 @@
+<section class="contact">
+    
+    <h1 class="contact__titre">Contact</h1>
+    <h2 class="contact__titre-sous">Besoin d'un conseil matelot ? </h2>
+
+    <form method="post" class="contact__formulaire" (ngSubmit)='send($event)' [formGroup]='contactForm' novalidate>
+        
+        <div>
+        <input formControlName="nom" type="text" name="nom" placeholder="Nom *" class="contact__champs">
+        <p class="contact__error" *ngIf="contactForm.get('nom')?.errors?.['required'] && isSendContactForm">Le nom est obligatoire</p>
+        </div>
+
+        <div>
+            <input formControlName="prenom" type="text" name="prenom" placeholder="Prenom *" class="contact__champs">
+            <p class="contact__error" *ngIf="contactForm.get('prenom')?.errors?.['required'] && isSendContactForm">Le prénom est obligatoire</p>
+        </div>
+
+        <div>
+        <input formControlName="email" type="email" name="email" placeholder="Email *"
+        class="contact__champs" required>
+        <p class="contact__error" *ngIf="contactForm.get('email')?.errors?.['required'] && isSendContactForm">L'Email est obligatoire</p>
+        <p class="contact__error" *ngIf="contactForm.get('email')?.errors?.['email'] && isSendContactForm">Il faut un email valide</p>
+        </div>
+
+        <div>
+        <textarea formControlName="message" id="message" name="message" class="contact__champs-area" required placeholder="Message *"></textarea>
+        <p class="contact__error" *ngIf="contactForm.get('message')?.errors?.['required'] && isSendContactForm">Le message est obligatoire</p>
+        </div>
+        
+        <input type="submit" value="Envoyer" class="contact__button">
+    </form>
+
+</section>

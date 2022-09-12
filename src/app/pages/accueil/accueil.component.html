@@ -1,0 +1,42 @@
+<section class="home">
+  <header class="home__header">
+    <h1 class="home__titre">
+      <span class="home__titre-partie home__titre-partie--gauche">La voile</span>
+      <span class="home__titre-partie home__titre-partie--centre">à portée</span>
+      <span class="home__titre-partie home__titre-partie--droite">de mains</span>
+    </h1>
+    <img src="/assets/img/bateau.svg" alt="Bateau" class="home__bateau">
+    <section class="home__meilleures">
+      <h2 class="home__meilleures-titre">Nos meilleures offres</h2>
+      <div class="home__meilleures-vignettes">
+        <app-bateau-vignette class="home__meilleures-vignette" *ngFor="let bateau of bateaux" [bateau]="bateau">
+        </app-bateau-vignette>
+      </div>
+    </section>
+  </header>
+  <article class="home__presentation">
+    <h2 class="home__presentation-titre">
+      <img src="/assets/img/logo-winder-text.svg" alt="Logo textuel Winder" class="home__presentation-titre-logo">
+      c'est quoi ?
+    </h2>
+    <p class="home__presentation-description">Winder propose une large gamme de voilier en location sur La Rochelle. Vous pourrez choisir votre voilier parfait et le réserver directement en ligne. Notre objectif est de mettre à disposition ce divertissement et ce sport souvent trop peu accessible.
+      </p>
+    <p class="home__presentation-description">Nous souhaitons également que votre experience sur notre comme au-delà de la cote rochelaise soit la plus optimal possible.</p>
+  </article>
+  <owl-carousel-o [options]="optionsOwl" class="slider">
+    <ng-template carouselSlide>
+      <img class="slider__img" height="200px" src="/assets/img/bateau-1.png">
+    </ng-template>
+    <ng-template carouselSlide>
+      <img class="slider__img" height="200px" src="/assets/img/bateau-2.png">
+    </ng-template>
+    <ng-template carouselSlide>
+      <img class="slider__img" height="200px" src="/assets/img/bateau-3.png">
+    </ng-template>
+  </owl-carousel-o>
+
+  <section class="para">
+    J’ai vraiment été surpris par l’éfficacité et la rapidité de Winder. Des recherches au voilier, ça ne m’a pris qu’une journée. Je recommande vraiment ce site
+  </section>
+
+</section>

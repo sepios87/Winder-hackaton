@@ -1,0 +1,60 @@
+<app-retour></app-retour>
+<section class="filtre">
+  <h1 class="filtre__titre">Trouve ton bateau</h1>
+  <form method="post" (ngSubmit)='filtrer()' [formGroup]="filtreForm" class="filtre__form">
+    <h2 class="filtre__form-titre">Prix</h2>
+    <p id="prix-affiche">Jusqu'a {{ filtreForm.get('prix')?.value || 0 }} €</p>
+    <input class="filtre__form-intervalle" type="range" formControlName="prix" name="prix" id="prix" step="10" max="3000">
+    <h2 class="filtre__form-titre">Autres filtres</h2>
+    <section class="filtre__form-nombre">
+      <label class="filtre__form-etiquette" for="couchage">Couchages</label>
+      <div class="filtre__form-container">
+        <span class="filtre__form-bouton" (click)="enleverUn(couchage.id)">-</span>
+        <input class="filtre__form-input--nombre" #couchage formControlName="couchage" name="couchage" id="couchage" type="number" min="0">
+        <span class="filtre__form-bouton" (click)="ajouterUn(couchage.id)">+</span>
+      </div>
+    </section>
+    <section class="filtre__form-nombre">
+      <label class="filtre__form-etiquette" for="nbPersonnes">Nombre de personnes</label>
+      <div class="filtre__form-container">
+        <span class="filtre__form-bouton" (click)="enleverUn(nbPersonnes.id)">-</span>
+        <input class="filtre__form-input--nombre" #nbPersonnes formControlName="nbPersonnes" name="nbPersonnes" id="nbPersonnes" type="number" min="0">
+        <span class="filtre__form-bouton" (click)="ajouterUn(nbPersonnes.id)">+</span>
+      </div>
+    </section>
+    <section class="filtre__form-services">
+      <h2 class="filtre__form-titre">Services</h2>
+      <section class="filtre__form-services-list">
+        <div class="filtre__form-service">
+          <input class="filtre__form-checkbox" type="checkbox" name="repas" id="repas">
+          <label class="filtre__form-select" for="repas">
+            Repas
+            <i class="filtre__form-icone fa-solid fa-utensils"></i>
+          </label>
+        </div>
+        <div class="filtre__form-service">
+          <input class="filtre__form-checkbox" type="checkbox" name="capitaine" id="capitaine">
+          <label class="filtre__form-select" for="capitaine">
+            Capitaine
+            <i class="filtre__form-icone fa-solid fa-anchor"></i>
+          </label>
+        </div>
+        <div class="filtre__form-service">
+          <input class="filtre__form-checkbox" type="checkbox" name="menage" id="menage">
+          <label class="filtre__form-select" for="menage">
+            Ménage
+            <i class="filtre__form-icone fa-solid fa-broom"></i>
+          </label>
+        </div>
+        <div class="filtre__form-service">
+          <input class="filtre__form-checkbox" type="checkbox" name="wifi" id="wifi">
+          <label class="filtre__form-select" for="menage">
+            Wi-Fi
+            <i class="filtre__form-icone fa-solid fa-wifi"></i>
+          </label>
+        </div>
+      </section>
+      <input type="submit" value="Filtrer" class="filtre__form-soumettre">
+    </section>
+  </form>
+</section>

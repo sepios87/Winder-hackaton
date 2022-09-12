@@ -1,0 +1,8 @@
+<section class="profil-reservation__bloc"  *ngIf="bateau">
+    <img class="profil-reservation__image" *ngIf="bateau.images.length" [src]="bateau.images[0].getUrl" alt="Image du bateau">
+    <section class="profil-reservation__infos">
+      <h3 class="profil-reservation__subtitle">{{ bateau.nom }}</h3>
+      <p class="profil-reservation__date">{{reservation?.dateDebut | date:'dd MMM yy - HH:mm'}}</p>
+      <p class="profil-reservation__hour">{{reservation?.dateFin | date:'dd MMM yy - HH:mm' }}</p>
+    </section>
+  </section>

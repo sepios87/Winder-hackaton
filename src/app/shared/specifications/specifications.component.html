@@ -1,0 +1,18 @@
+<section class="specification" *ngIf="bateau">
+  <img class="icon" src="/assets/img/longeur.svg" alt="longueur qui pete sa mère (deso mais il est tard)">
+  <p class="specification__info">Longueur : {{ bateau?.longueur }} m</p>
+  <img class="icon" src="/assets/img/tirant.svg" alt="tirant qui pete sa mère (deso mais il est tard)">
+  <p class="specification__info">Tirant d'eau : {{ bateau?.tirantEau }}</p>
+  <img class="icon" src="/assets/img/largeur.svg" alt="largeur qui pete sa mère (deso mais il est tard)">
+  <p class="specification__info">Largeur : {{ bateau?.largeur }} m</p>
+  <img class="icon" src="/assets/img/capacite.svg" alt="capacité qui pete sa mère (deso mais il est tard)">
+  <p class="specification__info">Capacité : {{ bateau?.capacite }}</p>
+  <img class="icon" src="/assets/img/couchage_2.svg" alt="couchage qui pete sa mère (deso mais il est tard)">
+  <p class="specification__info">Couchage : {{ bateau?.couchage }}</p>
+  <img class="icon" src="/assets/img/voile.svg" alt="voile qui pete sa mère (deso mais il est tard)">
+  <p class="specification__info">Type de voile : {{ bateau?.typeVoile }}</p>
+  <img *ngIf="bateau.annee" class="icon" src="/assets/img/construction.svg" alt="construction qui pete sa mère (deso mais il est tard)">
+  <p *ngIf="bateau.annee" class="specification__info">Année de construction : {{ bateau?.annee }}</p>
+  <img class="icon" src="/assets/img/classe.svg" alt="classe qui pete sa mère (deso mais il est tard)">
+  <p class="specification__info">Classe : {{ bateau?.classe }}</p>
+</section>

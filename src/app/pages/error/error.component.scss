@@ -1,0 +1,26 @@
+@import "src/app/styles/variables";
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $darkBlue;
+  font-weight: bold;
+  height: 100vh;
+
+  &__number {
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
+    padding-top: 15rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__background {
+    position: absolute;
+    bottom: -20vh;
+  }
+}

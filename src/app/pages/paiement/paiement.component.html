@@ -1,0 +1,41 @@
+<section class="paiement">
+    <h1 class="paiement__titre">choisir votre</h1>
+    <h2 class="paiement__titre-sous">mode de paiement</h2>
+
+
+    <div class="paiement-card">
+        <div class="paiement-card__flex">
+            <p class="paiement-card__title"> <img src="/assets/img/mastercard_logo.png" alt="" class="paiement-card__img">mastercard </p>
+
+        </div>
+        <p class="paiement-card__number">
+            **** **** **** ****
+        </p>
+
+        <div class="paiement-card__flex paiement-card__flex--bottom">
+            <p class="paiement-card__title paiement-card__title--min">
+                16/06
+            </p>
+            <p class="paiement-card__title paiement-card__title--min">
+                156
+            </p>
+        </div>
+    </div>
+
+    <div class="paiement__form">
+        <ngx-stripe-card
+            [options]="cardOptions"
+            [elementsOptions]="elementsOptions"
+        ></ngx-stripe-card>
+    </div>
+
+    <label class="paiement__label">
+        Nom de la carte
+        <input type="text" class="paiement__input">
+    </label>
+
+    <div class="paiement__footer">
+        <p class="paiement__total">Total à payer <span class="paiement__total-value"> 800 €</span></p>
+        <a routerLink="/validation" class="paiement__valide">Valider</a>
+    </div>
+</section>

@@ -1,0 +1,45 @@
+@import "src/app/styles/variables";
+@import "src/app/styles/fonts";
+
+@mixin titre($taille: 32px) {
+  font-size: $taille;
+  color: $darkBlue;
+  font-family: 'Gotham Bold', sans-serif;
+}
+
+@mixin sousTitre($taille: 20px) {
+  font-size: $taille;
+  color: $darkBlue;
+  font-family: 'Gotham Book', sans-serif;
+}
+
+@mixin layout($padding: 20% 5%) {
+  padding: $padding;
+}
+
+@mixin button($backgroundColor: $darkBlue, $color: white) {
+  padding: 1rem .6rem;
+  text-align: center;
+  background-color: $backgroundColor;
+  border: 0;
+  color: $color;
+  font-size: 24px;
+  border-radius: 10px;
+  font-family: 'Gotham Medium', sans-serif;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+@mixin like($color: white) {
+  height: 20px;
+  background-color: $color;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: .2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}

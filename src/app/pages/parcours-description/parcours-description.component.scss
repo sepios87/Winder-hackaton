@@ -1,0 +1,59 @@
+@import 'src/app/styles/variables';
+@import 'src/app/styles/fonts';
+@import 'src/app/styles/mixins';
+
+.itineraire {
+  position: relative;
+
+  &__description {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    background-color: white;
+    padding: 1.5rem 2rem 1rem;
+  }
+
+  &__nom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__titre {
+    font-family: Gotham Bold, sans-serif;
+    font-size: 20px;
+    color: $darkBlue;
+  }
+
+  &__note {
+    color: $brown;
+    font-family: Gotham Bold, sans-serif;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icone {
+    margin: 0 .5rem;
+  }
+
+  &__soustitre {
+    color: $darkBlue;
+    font-family: Gotham Medium, sans-serif;
+    font-size: 16px;
+
+    &--gold {
+      color: $brown;
+    }
+  }
+
+  &__bouton {
+    @include button();
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__texte {
+    color: $darkBlue;
+    margin-top: 1rem;
+  }
+
+}

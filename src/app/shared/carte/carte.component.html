@@ -1,0 +1,20 @@
+<a *ngIf="bateau" [routerLink]="['/reservation', bateau.id]" class="card">
+    <img class="card__img" *ngIf="bateau.images.length" [src]="bateau.images[0].getUrl" alt="image bateau"/>
+    <img (click)="toggleLike($event)" *ngIf="bateau.images.length" class="like" [src]="isLiked ? '/assets/icons/liked.png' : '/assets/icons/like.png'"/>
+    <section class="card__banner">
+        <div class="card__line">
+            <h3 class="card__name">{{ bateau.nom }}</h3>
+            <p class="card__price"><span>{{ bateau.prix }}€</span>/h</p>
+        </div>
+        <div class="card__line">
+            <div class="card__icon">
+                <img src="/assets/icons/user.png"/>
+                <p class="card__capacite">{{bateau.capacite}} personnes</p>
+            </div>
+            <div class="card__icon">
+                <img src="/assets/icons/calendar.png"/>
+                <p>Réserver</p>
+            </div>
+        </div>
+    </section>
+</a>

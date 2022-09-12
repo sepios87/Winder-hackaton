@@ -1,0 +1,118 @@
+
+@import "src/app/styles/variables";
+@import "src/app/styles/mixins";
+
+.paiement{
+    @include layout();
+    &__titre{
+        @include titre(32px); 
+
+        &-sous{
+            margin-top: 1rem;
+            @include titre(20px); 
+            font-family: 'Gotham Medium', sans-serif;
+        }
+    }
+
+    &__form{
+        background-color: $lightBlue;
+        padding: 22px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+    &__total{
+        display: flex;
+        flex-direction: column;
+        @include titre(20px);
+        &-value{
+            color: $brown;
+            font-size: 32px;
+        }
+    }
+
+    &__input{
+        padding-left: 1.5rem;
+        border-radius: 10px;
+        background-color: $lightBlue;
+        height: 5vh;
+        color: $darkBlue;
+        border : 1px solid $lightBlue;
+        width: 80vw;
+        margin: 10px 1vw;
+        font-family: 'Gotham Medium', sans-serif;
+        font-size: 15px;
+    }
+
+    &__label{
+        @include titre(20px);
+    }
+
+    &__valide{
+        @include button;
+        padding: 1.5rem 2.5rem; 
+    }
+
+    &__footer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+}
+
+.paiement-card {
+  width: 80%;
+  height: 12rem;
+  background-color: $darkBlue;
+  border-radius: 13px;
+  position: relative;
+  margin: 35px 10%;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &--bottom {
+      position: absolute;
+      bottom: 0;
+      width: 90%;
+    }
+  }
+
+  &__img{
+      width: 40px;
+      margin: 0 20px;
+  }
+
+  &__title {
+    color: $lightBlue;
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 20px;
+
+    &--min {
+        font-size: 20px;
+    }
+  }
+
+  &__number {
+    color: white;
+    font-family: 'Gotham Medium', sans-serif;
+    padding: 1.3rem 1rem;
+    letter-spacing: 6px;
+    font-size: 20px;
+  }
+}
+
+.visa{
+  width: 36px;
+  height: 28px;
+  & path{
+    stroke: $lightBlue;
+    fill :$lightBlue;
+  }
+}

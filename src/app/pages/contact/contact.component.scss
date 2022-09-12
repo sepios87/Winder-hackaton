@@ -1,0 +1,55 @@
+
+@import "src/app/styles/variables";
+@import "src/app/styles/mixins";
+
+.contact{
+    @include layout();
+    &__titre{
+        @include titre(32px); 
+
+        &-sous{
+            margin-top: 1rem;
+            @include titre(20px); 
+            font-family: 'Gotham Medium', sans-serif;
+        }
+    }
+
+    &__formulaire{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        margin-top: 40px; 
+    }
+
+    &__error{
+        color: red;
+        text-align: center;
+    }
+
+    &__champs{
+        padding-left: 1.5rem;
+        border-radius: 10px;
+        background-color: $lightBlue;
+        height: 5vh;
+        color: $darkBlue;
+        border : 1px solid $lightBlue;
+        width: 70vw;
+        margin: 10px 8vw;
+        font-family: 'Gotham Medium', sans-serif;
+        font-size: 15px;
+
+        &-area{
+            @extend .contact__champs; 
+            height: 15vh;
+            padding-top: 10px;
+        }
+    }
+
+    &__button{
+        @include button;
+        margin-top: 3rem;
+        padding: 1.5rem 3.5rem;
+    }
+
+}

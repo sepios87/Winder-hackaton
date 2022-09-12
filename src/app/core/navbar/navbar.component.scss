@@ -1,0 +1,104 @@
+@import "src/app/styles/reset.scss";
+@import "src/app/styles/variables.scss";
+@import "src/app/styles/mixins.scss";
+
+.navigation {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  background-color: $darkBlue;
+  width: 100vw;
+  height: 78px;
+  display: flex;
+  align-items: center;
+
+  &__input {
+    display: none;
+  }
+
+  &__burger {
+    background-color: $brown;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+    &::before {
+      content: "Menu";
+      display: block;
+      rotate: -90deg;
+      color: white;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+  &__logo {
+    width: 150px;
+    margin-left: 30px;
+  }
+
+  &__label {
+    z-index: 2;
+    width: 88vw;
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    height: 100%;
+    font-family: "Walkway";
+    color: $darkBlue;
+    fill: $darkBlue;
+  }
+
+  &__menu {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    position: fixed;
+    bottom: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 40px;
+    transition: 0.3s;
+    font-weight: bold;
+    background-color: $darkBlue;
+
+    &--open {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__link {
+    margin: 20px 50px;
+    display: flex;
+    align-items: baseline;
+    &-external {
+      @extend .navigation__link;
+      width: 30vw;
+      justify-content: space-between;
+    }
+  }
+}
+
+.active-link {
+  display: flex;
+  align-items: baseline;
+
+  &:before {
+    content: "";
+    display: block;
+    background-image: url("/assets/img/vague.svg");
+    width: 50px;
+    height: 16px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+  }
+}

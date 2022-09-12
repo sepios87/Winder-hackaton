@@ -1,0 +1,32 @@
+<section class="profil" *ngIf="utilisateur">
+  <a class="profil__deconnexion" routerLink="/deconnexion">Se déconnecter</a>
+  <h1 class="profil__title">Bienvenue à Bord <span>{{utilisateur.nom}} {{utilisateur.prenom}}</span></h1>
+  <section class="profil-reservation">
+    <h2 class="profil-reservation__title section-profil__title">Ma réservation</h2>
+    <ul>
+      <li *ngFor="let reservation of reservations" class="profil__bloc">
+        <app-reservation-item [reservation]="reservation"></app-reservation-item>
+      </li>
+    </ul>
+  </section>
+  <section class="profil-infos">
+    <h2 class="profil-infos__title section-profil__title">Mes informations</h2>
+    <section class="profil-infos__datas">
+      <section class="profil-infos__bloc">
+        <img *ngIf="utilisateur.avatar" [src]="utilisateur.avatar.getUrl" alt="Image Charlux" class="profil-infos__image">
+        <div *ngIf="!utilisateur.avatar" class="profil-infos__image profil-infos__image--white">
+          {{ utilisateur.nom.split('').slice(0,1) }} {{ utilisateur.prenom.split('').slice(0,1) }}
+        </div>
+        <section class="profil-infos__identity">
+          <p class="profil-infos__surname">Nom : <span>{{utilisateur.nom}}</span></p>
+          <p class="profil-infos__name">Prénom : <span>{{utilisateur.prenom}}</span></p>
+        </section>
+      </section>
+      <p class="profil-infos__email">Email : <span>{{utilisateur.email}}</span></p>
+      <section class="profil-buttons">
+        <a href="" class="profil-buttons__mdp">Supprimer</a>
+        <a href="" class="profil-buttons__save">Sauvegarder</a>
+      </section>
+    </section>
+  </section>
+</section>

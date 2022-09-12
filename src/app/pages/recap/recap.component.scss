@@ -1,0 +1,74 @@
+@import "src/app/styles/variables";
+@import "src/app/styles/mixins";
+
+.recap{
+  background-color: $lightBlue;
+  height: 100vh;
+  @include layout;
+  &__contenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title{
+    font-size: 24px;
+    color: $darkBlue;
+    font-family: Gotham Bold, sans-serif;
+    margin-bottom: 2rem;
+    &--strong{
+      display: block;
+    }
+  }
+  .informations{
+    .information__title{
+      font-size: 18px;
+      color: $darkBlue;
+      font-family: Gotham Medium, sans-serif;
+    }
+    .information {
+      font-size: 22px;
+      color: $darkBlue;
+      margin-bottom: 1.5rem;
+    }
+    .supplement{
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 1.5rem;
+      background-color: $darkBlue;
+      width: fit-content;
+      margin-bottom: 2rem;
+      margin-top: 1.5rem;
+      border-radius: 8px;
+      &__title{
+        font-size: 16px;
+        color: white;
+      }
+    }
+    .total{
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      &__title{
+        font-size: 24px;
+        font-family: Gotham Bold, sans-serif;
+        color: $darkBlue;
+      }
+      &__strong {
+        font-size: 37px;
+        font-family: Gotham Bold, sans-serif;
+        color: $brown;
+      }
+    }
+    .button {
+      padding: 1rem 2rem;
+      background-color: $darkBlue;
+      font-size: 24px;
+      font-family: Gotham Bold, sans-serif;
+      border-radius: 8px;
+      border: 0;
+      margin: auto;
+      display: block;
+      width: fit-content;
+    }
+  }
+}

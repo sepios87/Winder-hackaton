@@ -1,0 +1,104 @@
+@import "src/app/styles/mixins";
+@import "src/app/styles/variables";
+
+.container {
+    margin-bottom: 120px;
+}
+
+.reservation-header {
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+
+    &__img {
+        object-fit: cover;
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+.like {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    right: 30px;
+    background-color: $brown;
+    @include like($lightBlue);
+}
+
+.section {
+    margin: 20px 5%;
+    color: $darkBlue;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.subtitle-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.title {
+    @include titre;
+
+    &--total {
+        margin: 40px 5%;
+
+        span {
+            color: $brown;
+            font-size: 36px
+        }
+    }
+}
+
+.subtitle {
+    @include sousTitre;
+}
+
+.button {
+    @include button($lightBlue, $darkBlue);
+    display: block;
+    margin: 30px auto;
+
+    &--blue {
+        @include button;
+    }
+}
+
+.disabled {
+  background-color: $lightBlue;
+  color: $darkBlue;
+  border: 2px solid $darkBlue;
+  opacity: 70%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+
+    &__label {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 6px;
+        width: 80%;
+        color: $darkBlue;
+    }
+}
+
+.input {
+    border: none;
+    border-radius: 3px;
+    padding: 8px 10px;
+    background-color: $lightBlue;
+    color: $darkBlue;
+}

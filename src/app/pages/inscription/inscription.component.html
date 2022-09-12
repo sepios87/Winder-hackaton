@@ -1,0 +1,27 @@
+<app-retour></app-retour>
+<section class="inscription">
+  <h1 class="inscription__titre">S'inscrire</h1>
+  <p class="inscription__description">Vous devez connecter pour accéder aux différentes fonctionnalités</p>
+  <p class="inscription__description inscription__description--bold">Vous êtes :</p>
+  <form (submit)="creerCompte()" class="inscription__form" [formGroup]="inscriptionForm">
+    <input formControlName="nom" class="inscription__champ" type="text" name="nom" id="nom" placeholder="Nom">
+    <p class="inscription__error" *ngIf="inscriptionForm.get('nom')?.errors?.['required'] && isSendContactForm">Le nom est obligatoire</p>
+    <input formControlName="prenom" class="inscription__champ" type="text" name="prenom" id="prenom" placeholder="Prénom">
+    <p class="inscription__error" *ngIf="inscriptionForm.get('prenom')?.errors?.['required'] && isSendContactForm">Le prénom est obligatoire</p>
+
+    <input formControlName="email" class="inscription__champ" type="text" name="email" id="email" placeholder="Email">
+    <p class="inscription__error" *ngIf="inscriptionForm.get('email')?.errors?.['required'] && isSendContactForm">L'email est obligatoire</p>
+
+    <input formControlName="mdp" class="inscription__champ" type="password" name="mdp" id="mdp" placeholder="Mot de passe">
+    <p class="inscription__error" *ngIf="inscriptionForm.get('mdp')?.errors?.['required'] && isSendContactForm">Le deux mots de passes sont obligatoire</p>
+
+    <input formControlName="mdp2" class="inscription__champ" type="password" name="mdp2" id="mdp2" placeholder="Confirmez votre mot de passe">
+    <p class="inscription__error" *ngIf="inscriptionForm.get('mdp2')?.errors?.['required'] && isSendContactForm">Le deux mots de passes sont obligatoire</p>
+
+    <p class="inscription__error" *ngIf="msgErreur">Le deux mots de passes sont obligatoire</p>
+
+    <input class="inscription__button" type="submit" value="Créer un compte">
+  </form>
+  <p class="inscription__separator"><span class="inscription__separator-text">ou</span></p>
+  <a routerLink="/connexion" class="inscription__button inscription__button--secondary">Se connecter</a>
+</section>
