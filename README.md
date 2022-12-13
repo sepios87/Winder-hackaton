@@ -162,7 +162,7 @@ Pour promouvoir notre produit, nous avons mis en place une stratégie de communi
 
 - présentation du produit 
 
-#### Affiche
+#### Affiches
 
 <img height="300px" src="src/assets/documents/affiches/affiche2.png" width="auto"/>
 
