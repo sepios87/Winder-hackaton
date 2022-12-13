@@ -50,10 +50,6 @@ Nous avons choisis ces couleurs :
 
 <img height="auto" src="src/assets/documents/images_readme/colors.png" width="150px"/>
 
-Mais aussi ces typographies :
-
-<img height="auto" src="src/assets/documents/images_readme/typo.png" width="150px"/>
-
 ### Développement
 
 #### Technologie 
