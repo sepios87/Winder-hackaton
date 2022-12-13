@@ -164,11 +164,11 @@ Pour promouvoir notre produit, nous avons mis en place une stratégie de communi
 
 #### Affiche
 
-<img height="300px" src="src/assets/documents/affiches/affiches2.png" width="auto"/>
+<img height="300px" src="src/assets/documents/affiches/affiche2.png" width="auto"/>
 
 <img height="300px" src="src/assets/documents/affiches/affiche3.jpg" width="auto"/>
 
-<img height="300px" src="src/assets/documents/affiches/affiches1.png" width="auto"/>
+<img height="300px" src="src/assets/documents/affiches/affiche1.png" width="auto"/>
 
 #### Vidéo Promotionelle
 
