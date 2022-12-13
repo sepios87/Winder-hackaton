@@ -44,19 +44,11 @@ Pour ce projet, nous avons créé un logo et une image de marque. Le logo repren
 
 <img height="auto" src="src/assets/documents/images_readme/logo.png" width="150px"/>
 
-<img height="auto" src="src/assets/documents/images_readme/logo_miniature.png" width="150px"/>
-
-<img height="auto" src="src/assets/documents/images_readme/logo_clair.png" width="150px"/>
-
 ### Charte graphique
 
 Nous avons choisis ces couleurs :
 
 <img height="auto" src="src/assets/documents/images_readme/colors.png" width="150px"/>
-
-Mais aussi ces typographies :
-
-<img height="auto" src="src/assets/documents/images_readme/typo.png" width="150px"/>
 
 ### Développement
 
@@ -79,18 +71,6 @@ La première étape développé pour ce projet sont les composants:
 <img height="auto" src="src/assets/documents/images_readme/menu.png" width="150px"/>
 
 <img height="auto" src="src/assets/documents/images_readme/menu_open.png" width="150px"/>
-
-- Les boutons : 
-
-<img height="auto" src="src/assets/documents/images_readme/boutons.png" width="150px"/>
-
-- Les titres :
-
-<img height="auto" src="src/assets/documents/images_readme/titre.png" width="150px"/>
-
-- Les inputs :
-
-<img height="auto" src="src/assets/documents/images_readme/input.png" width="150px"/>
 
 ##### Connexion 
 
@@ -130,7 +110,7 @@ Nous avons ensuite développé la page qui affiche les informations d'un produit
 
 Une fois que l'utilisateur à choisie un produit, il a la possibilité de réserver le bateau :  
 
-<img height="auto" src="src/assets/documents/images_readme/réservation.png" width="150px"/>
+<img height="auto" src="src/assets/documents/images_readme/reservation.png" width="150px"/>
 
 ##### Recherche de trajet 
 
@@ -162,13 +142,13 @@ Pour promouvoir notre produit, nous avons mis en place une stratégie de communi
 
 - présentation du produit 
 
-#### Affiche
+#### Affiches
 
-<img height="300px" src="src/assets/documents/affiches/affiches2.png" width="auto"/>
+<img height="300px" src="src/assets/documents/affiches/affiche2.png" width="auto"/>
 
-<img height="300px" src="src/assets/documents/affiches/affiche3.jpg" width="auto"/>
+<img height="300px" src="src/assets/documents/affiches/affiche3.png" width="auto"/>
 
-<img height="300px" src="src/assets/documents/affiches/affiches1.png" width="auto"/>
+<img height="300px" src="src/assets/documents/affiches/affiche1.png" width="auto"/>
 
 #### Vidéo Promotionelle
 
