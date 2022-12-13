@@ -159,16 +159,3 @@ Pour promouvoir notre produit, nous avons mis en place une stratégie de communi
 [Diaporama]()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
