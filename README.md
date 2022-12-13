@@ -130,7 +130,7 @@ Nous avons ensuite développé la page qui affiche les informations d'un produit
 
 Une fois que l'utilisateur à choisie un produit, il a la possibilité de réserver le bateau :  
 
-<img height="auto" src="src/assets/documents/images_readme/réservation.png" width="150px"/>
+<img height="auto" src="src/assets/documents/images_readme/reservation.png" width="150px"/>
 
 ##### Recherche de trajet 
 
