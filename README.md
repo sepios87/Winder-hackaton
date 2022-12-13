@@ -44,10 +44,6 @@ Pour ce projet, nous avons créé un logo et une image de marque. Le logo repren
 
 <img height="auto" src="src/assets/documents/images_readme/logo.png" width="150px"/>
 
-<img height="auto" src="src/assets/documents/images_readme/logo_miniature.png" width="150px"/>
-
-<img height="auto" src="src/assets/documents/images_readme/logo_clair.png" width="150px"/>
-
 ### Charte graphique
 
 Nous avons choisis ces couleurs :
@@ -79,18 +75,6 @@ La première étape développé pour ce projet sont les composants:
 <img height="auto" src="src/assets/documents/images_readme/menu.png" width="150px"/>
 
 <img height="auto" src="src/assets/documents/images_readme/menu_open.png" width="150px"/>
-
-- Les boutons : 
-
-<img height="auto" src="src/assets/documents/images_readme/boutons.png" width="150px"/>
-
-- Les titres :
-
-<img height="auto" src="src/assets/documents/images_readme/titre.png" width="150px"/>
-
-- Les inputs :
-
-<img height="auto" src="src/assets/documents/images_readme/input.png" width="150px"/>
 
 ##### Connexion 
 
