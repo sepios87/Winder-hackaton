@@ -42,21 +42,21 @@ Notre objectif ? Aider Pascal à réserver le bon voilier pour ses vacances sans
 
 Pour ce projet, nous avons créé un logo et une image de marque. Le logo reprend le nom en formant des voiles avec le W. Le format miniature de ce logo reprends seulement le W le logo initiale. 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/logo.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/logo.png" width="150px"/>
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/logo_miniature.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/logo_miniature.png" width="150px"/>
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/logo_clair.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/logo_clair.png" width="150px"/>
 
 ### Charte graphique
 
 Nous avons choisis ces couleurs :
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/colors.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/colors.png" width="150px"/>
 
 Mais aussi ces typographies :
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/typo.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/typo.png" width="150px"/>
 
 ### Développement
 
@@ -76,29 +76,29 @@ La première étape développé pour ce projet sont les composants:
 
 - Le menu : 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/menu.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/menu.png" width="150px"/>
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/menu_open.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/menu_open.png" width="150px"/>
 
 - Les boutons : 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/boutons.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/boutons.png" width="150px"/>
 
 - Les titres :
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/titre.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/titre.png" width="150px"/>
 
 - Les inputs :
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/input.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/input.png" width="150px"/>
 
 ##### Connexion 
 
 Nous avons ensuite développé la connexion et l'inscription à l'application : 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/connexion.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/connexion.png" width="150px"/>
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/inscription.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/inscription.png" width="150px"/>
 
  
 
@@ -106,49 +106,49 @@ Nous avons ensuite développé la connexion et l'inscription à l'application :
 
 Nous avons ensuite développé la page d'accueil : 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/accueil.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/accueil.png" width="150px"/>
 
 ##### Liste des produits 
 
 Nous avons ensuite développé la page qui affiche l'ensemble des produits disponibles :
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/liste.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/liste.png" width="150px"/>
 
 ##### Recherche 
 
 Cet liste des produits pourra être trié par l'utilisateur grâce à des critères de filtres : 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/recherche.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/recherche.png" width="150px"/>
 
 ##### Affichage d'un produit 
 
 Nous avons ensuite développé la page qui affiche les informations d'un produit : 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/liste.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/liste.png" width="150px"/>
 
 ##### Réservation 
 
 Une fois que l'utilisateur à choisie un produit, il a la possibilité de réserver le bateau :  
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/liste.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/liste.png" width="150px"/>
 
 ##### Recherche de trajet 
 
 Une pages de recherche de trajets va permettre aux utilisateurs de trouver une boucle à faire avec le bateau dans le cas ou l'on ne connais pas les lieux. 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/trajets.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/trajets.png" width="150px"/>
 
 ##### Page de contact
 
 Un page a aussi été développé afin de permettre aux utilisateurs de contacter nos services : 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/contact.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/contact.png" width="150px"/>
 
 ##### Gestion du profile
 
 L'utilisateur pourra aussi gérer sons profils et ses informations : 
 
-<img alt="Charte graphique" height="auto" src="public/documents/images_readme/profile.png" width="150px"/>
+<img alt="Charte graphique" height="auto" src="assets/documents/images_readme/profile.png" width="150px"/>
 
 ### Communication
 
@@ -162,11 +162,11 @@ Pour promouvoir notre produit, nous avons mis en place une stratégie de communi
 
 #### Affiche
 
-<img height="300px" src="public/documents/affiches/affiches2.png" width="auto"/>
+<img height="300px" src="assets/documents/affiches/affiches2.png" width="auto"/>
 
-<img height="300px" src="public/documents/affiches/affiche3.jpg" width="auto"/>
+<img height="300px" src="assets/documents/affiches/affiche3.jpg" width="auto"/>
 
-<img height="300px" src="public/documents/affiches/affiches1.png" width="auto"/>
+<img height="300px" src="assets/documents/affiches/affiches1.png" width="auto"/>
 
 #### Vidéo Promotionelle
 
