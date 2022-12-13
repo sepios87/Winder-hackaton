@@ -124,19 +124,21 @@ Cet liste des produits pourra être trié par l'utilisateur grâce à des critè
 
 Nous avons ensuite développé la page qui affiche les informations d'un produit : 
 
-<img height="auto" src="src/assets/documents/images_readme/liste.png" width="150px"/>
+<img height="auto" src="src/assets/documents/images_readme/produit.png" width="150px"/>
 
 ##### Réservation 
 
 Une fois que l'utilisateur à choisie un produit, il a la possibilité de réserver le bateau :  
 
-<img height="auto" src="src/assets/documents/images_readme/liste.png" width="150px"/>
+<img height="auto" src="src/assets/documents/images_readme/réservation.png" width="150px"/>
 
 ##### Recherche de trajet 
 
 Une pages de recherche de trajets va permettre aux utilisateurs de trouver une boucle à faire avec le bateau dans le cas ou l'on ne connais pas les lieux. 
 
 <img height="auto" src="src/assets/documents/images_readme/trajets.png" width="150px"/>
+
+<img height="auto" src="src/assets/documents/images_readme/trajet.png" width="150px"/>
 
 ##### Page de contact
 
