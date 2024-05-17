@@ -92,7 +92,7 @@ Nous avons ensuite développé la page d'accueil :
 
 Nous avons ensuite développé la page qui affiche l'ensemble des produits disponibles :
 
-<img height="auto" src="assets/documents/images_readme/liste.png" width="150px"/>
+<img height="auto" src="src/assets/documents/images_readme/liste.png" width="150px"/>
 
 ##### Recherche 
 
