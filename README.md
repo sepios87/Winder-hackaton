@@ -16,12 +16,6 @@ Océane Guilloizeau
 
 [Florian Toribio](https://github.com/sepios87)
 
-**Ressources :** 
-
-[Figma](https://www.figma.com/file/ZJbG9Fepqxh2l0WkgPibsb/Winder?node-id=5%3A24) 
-
-[Présentation](https://docs.google.com/presentation/d/1gnTYzpb63A666igJ6cmY6eTgispkytB47Bt_b3QLP2o/edit?usp=drivesdk)
-
 ## Le Sujet 
 
 Fort de son implémentation côtière, La Rochelle offre un cadre idéal aux disciplines nautiques, notamment la voile. Avant d'atteindre le niveau professionnel, bons nombres d'associations et de projets bénévoles se développement dans le monde de la voile mais ne sont pas forcément équipés numériquement pour gérer et administrer l'ensemble des acteurs du nautisme Rochelais.
@@ -149,13 +143,5 @@ Pour promouvoir notre produit, nous avons mis en place une stratégie de communi
 <img height="300px" src="src/assets/documents/affiches/affiche3.png" width="auto"/>
 
 <img height="300px" src="src/assets/documents/affiches/affiche1.png" width="auto"/>
-
-#### Vidéo Promotionelle
-
-[Vidéo promotionelle du produit](https://drive.google.com/file/d/16rhfTNe1xQagU1JRPb3qQ_NcEKzUjNZk/view?resourcekey)
-
-### Présentation 
-
-[Diaporama]()
 
 
